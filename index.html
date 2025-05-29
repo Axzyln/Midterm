@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale= 1.0 ">
+<title>ToDoList App</title>
+<link rel="stylesheet" href="style.css">    
+  <link rel="stylesheet" href="style.css">   
+  </head>
+   <body>
+    <div class="container">
+        <h1>Todo List App</h1>
+        
+        <div class="controls">
+            <div>
+                <select id="filter-priority">
+                    <option value="all">All Priorities</option>
+                    <option value="high">High Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="low">Low Priority</option>
+                </select>
+                <button id="filter-btn">Filter</button>
+                <button id="reset-filter-btn">Reset Filter</button>
+            </div>
+        </div>
+        
+        <div class="board">
+            <div class="status-column">
+                <div class="column-header" id="todo-header">To Do</div>
+                <div class="tasks" id="todo-tasks">
+                    <!-- Tasks will be added here dynamically -->
+                </div>
+            </div>
+            
+            <div class="status-column">
+                <div class="column-header" id="inprogress-header">In Progress</div>
+                <div class="tasks" id="inprogress-tasks">
+                    <!-- Tasks will be added here dynamically -->
+                </div>
+            </div>
+            
+            <div class="status-column">
+                <div class="column-header" id="done-header">Done</div>
+                <div class="tasks" id="done-tasks">
+                    <!-- Tasks will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
